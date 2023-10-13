@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Omar Abragh">
+	<main>
+		<div class="space-y-8 px-4 sm:px-0">
+			<h1 class="heading">
+				Hi! I'm <span class="text-aquamarine">Omar Abragh</span>
+			</h1>
+
+			<div class="max-w-2xl text-cambridge-blue text-lg">
+				A 16 year-old developer from Morocco, I'm interested mostly in
+				compilers development and low-level systems using Rust, I use
+				Astro or Svelte with Tailwind for front-end development, I'm
+				currently learning about Firebase
+			</div>
+		</div>
+
+		<div class="icons">
+			<a href="https://x.com/oabragh"
+				><i class="fa-brands fa-x-twitter"></i></a
+			>
+			<a href="https://github.com/oabragh"
+				><i class="fa-brands fa-github"></i></a
+			>
+			<a href="https://web.facebook.com/profile.php?id=100089742574757"
+				><i class="fa-brands fa-facebook"></i></a
+			>
+			<a href="https://linkedin.com/in/oabragh"
+				><i class="fa-brands fa-linkedin"></i></a
+			>
+			<a href="https://discord.com/users/oabragh"
+				><i class="fa-brands fa-discord"></i></a
+			>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.icons {
+		@apply flex space-x-4 text-4xl bg-black-olive px-5 py-3
+			   rounded-full border-aquamarine text-aquamarine border;
+	}
+
+	.icons a {
+		transition: transform 0.2s;
+	}
+
+	.icons a:hover {
+		transform: scale(1.25);
+	}
+
+	.heading {
+		@apply text-4xl sm:text-5xl md:text-6xl font-archivo text-cambridge-blue;
+	}
+
+	main {
+		@apply flex flex-col min-h-screen items-center justify-center
+			   text-center space-y-20;
+	}
+</style>
